@@ -1,0 +1,21 @@
+body{
+    background-color: darkcyan;
+    min-height: 300px;
+}
+.site-header{
+    height:120px;
+    background-color: antiquewhite;
+    margin:0px;
+    padding:40px 0 0 0;
+}
+.site-footer{
+    height:40px;
+    background-color: antiquewhite;
+    margin:0px;
+    padding:0 0 0 40px;
+    text-align: center;
+   font-style: oblique;
+}
+.container{
+    min-height: 450px;
+}
