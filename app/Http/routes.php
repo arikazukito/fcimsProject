@@ -26,5 +26,9 @@ Route::get('/club','AdminController@club');
 Route::get('/coach','AdminController@coach');
 
 /********************************************0****/
+//routes for  testing
+Route::get('test',function(){
+    return 'Hello Sabin';
+});
 
 
