@@ -21,9 +21,9 @@ Route::get('/home','AdminController@dashboard');
 /*************************************************0*/
 
 /***************  Routes for Dashboard ************/
-Route::get('/player','AdminController@player');
-Route::get('/club','AdminController@club');
-Route::get('/coach','AdminController@coach');
+Route::get('/player/index','AdminController@player');
+Route::get('/club/index','AdminController@club');
+Route::get('/coach/index','AdminController@coach');
 
 /********************************************0****/
 

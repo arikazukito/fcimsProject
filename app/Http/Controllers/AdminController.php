@@ -11,10 +11,13 @@ class AdminController extends Controller {
         return view('admin/dashboard');
     }
     public function player(){
-        return view('admin/player');
+        return view('player/index');
     }
     public function club(){
-        return view('admin/club');
+        return view('club/index');
+    }
+    public function coach(){
+        return view('coach/index');
     }
 
 
