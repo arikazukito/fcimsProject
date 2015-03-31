@@ -27,5 +27,6 @@ Route::get('/coach/index','AdminController@coach');
 
 /********************************************0****/
 
-
+/******************8 Routes for Player ************/
+Route::get('/player/create','PlayerController@create');
 
