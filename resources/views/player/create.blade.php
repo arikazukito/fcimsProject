@@ -7,9 +7,10 @@
         <div class="col-lg-12">
             <div class="form-panel">
 
-            <h4 class="mb"><i></i>Add Playert</h4>
+            <h4 class="mb"><i></i>Add Player</h4>
                 <div class="panel-body">
-                     <form action="{{url('player.create')}}" method="POST">
+                     {{--<form action="{{route('player.create')}}" method="POST">--}}
+                    {!! Form::open(['route'=>'player.create'])!!}
                         <fieldset>
                             <div class="form-group">
                                  <label>PLAYER ID</label>
@@ -47,7 +48,7 @@
                                  <label>BLOOD GROUP</label>
                                  {{ Form::text('blood_Group',null,array('class'=>'form-control')) }}
 
-                            </
+                            </div>
                            <div class="form-group">
                                 <label>HEIGHT</label>
                                 {{ Form::text('height',null,array('class'=>'form-control'))}}
@@ -63,7 +64,7 @@
                             <button type="submit" class="btn btn-primary">Submit</button>
 
                         </fieldset>
-                    </form>
+                    {!! Form::close()!!}
                 </div>
             </div>
         </div>

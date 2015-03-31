@@ -16,7 +16,8 @@ Route::get('/contact','PageController@contact');
 Route::get('/playerDetail','PageController@playerDetail');
 Route::get('/clubDetail','PageController@clubDetail');
 Route::get('/coachDetail','PageController@coachDetail');
-Route::get('/home','AdminController@dashboard');
+Route::get('/admin/dashboard','AdminController@dashboard');
+Route::get('/pages/index','PageController@index');
 
 /*************************************************0*/
 
@@ -28,5 +29,5 @@ Route::get('/coach/index','AdminController@coach');
 /********************************************0****/
 
 /******************8 Routes for Player ************/
-Route::get('/player/create','PlayerController@create');
+Route::resource('player','PlayerController');
 
