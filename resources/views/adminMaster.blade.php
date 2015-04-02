@@ -26,5 +26,6 @@
    {{--footer section--}}
    <footer class="site-footer">
         @include('adminInclude/footer')
+        @yield('js_code')
    </footer>
 

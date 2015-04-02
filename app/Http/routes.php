@@ -29,5 +29,13 @@ Route::get('/coach/index','AdminController@coach');
 /********************************************0****/
 
 /******************8 Routes for Player ************/
-Route::resource('player','PlayerController');
+Route::get('/player/getAll',['as'=>'player/getAll','uses'=>'PlayerController@getAllPlayer']);
+Route::get('/player/delete/{any}',['as'=>'player/getAll','uses'=>'PlayerController@delete']);
+Route::resource('/player','PlayerController');
+Route::get('/player/store','PlayerController@store');
+
+
+/*****************88 Routes for club ***************/
+
+
 

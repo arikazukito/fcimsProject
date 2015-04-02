@@ -1,14 +1,11 @@
 @extends('adminMaster')
 @section('adminContent')
-  <div class="col-lg-11 main-chart">
-      <div class="form-panel">
+  <div class="row">
 
-       <div class="row-fluid">
-          <!-- block -->
-          <div class="block">
-              <div class="navbar navbar-inner block-header">
-                  <div class="muted pull-left"><h4 class="mb">Players</h4></div>
-              </div>
+  			<div class="panel panel-default">
+  				<div class="panel-heading"><center><b>Player Detail</b></center></div>
+
+              <div class="panel-body">
               <div class="block-content collapse in">
                   <div class="span12">
                      <div class="table-toolbar">
@@ -28,17 +25,17 @@
                       <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="data_table">
                           <thead>
                               <tr>
-                                  <th >Player Id</th>
+                                  <th width="10">ID</th>
                                   <th >Player Name</th>
                                   <th >DOB</th>
                                   <th >P. Address</th>
                                   <th >T. Address</th>
-                                  <th ">Blood Group</th>
-                                  <th >Height</th>
-                                  <th >Weight</th>
-                                  <th >Complexion</th>
-                                  <th>Edit</th>
-                                  <th>Delete</th>
+                                  <th width="100">Blood Group</th>
+                                  <th width="10">Height</th>
+                                  <th width="10">Weight</th>
+                                  <th width="40">Complexion</th>
+                                  <th width="10">Edit</th>
+                                  <th width="10">Delete</th>
                               </tr>
                           </thead>
                           <tbody>
@@ -53,5 +50,17 @@
       </div>
 
    </div><!-- /col-lg-9 END SECTION MIDDLE -->
+@stop
+@section('js_code')
+
+    <script src="{{asset('/js/jquery.min.js')}}"></script>
+   {{-- <script src="{{asset('/datatables/js/support-file.js')}}"></script>--}}
+
+
+     {{--<script src="{{asset('/datatables/js/jquery.js')}}"></script>--}}{{--<script src="{{asset('/datatables/js/jquery.js')}}"></script>--}}
+     <script src="{{asset('/datatables/js/jquery.dataTables.min.js')}}"></script>
+      <script src="{{asset('/datatables/js/DataTables.js')}}"></script>
+      <script src="{{asset('/datatables/js/support-file.js')}}"></script>
+       <script src="{{asset('/js/player.js')}}"></script>
 @stop
 
